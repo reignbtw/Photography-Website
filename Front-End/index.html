@@ -34,5 +34,35 @@
     </nav>
 
 <!--END OF NAV-->
+
+<header>
+    <!-- Slideshow Container -->
+    <div class="slideshow__container">
+        <!-- Full-width images-->
+        <div class="mySlides fade">
+            <img src="../images/img1.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="../images/img2.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="../images/img3.jpg" style="width:100%">
+        </div>
+
+        <!-- Next and Prev btns -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- Dots -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+</header>
 </body>
 </html>
+
+<script src="js/index.js"></script>
