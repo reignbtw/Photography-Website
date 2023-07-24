@@ -1,131 +1,21 @@
-:root {
-    --color-primary: #a2d6cf;
-    --color-font: #967F79;
-    --color-bg: #F6F5F1;
-    --color-white: white;
 
-    --container-width-lg: 88%;
-    --container-width-md: 92%;
-
-    --transition: all 400ms ease;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    list-style: none;
-    text-decoration: none;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: 'Taviraj';
-    background: var(--color-bg);
-    color: var(--color-font);
-    line-height: 1.7;
-}
-
-h1, h2 {
-    line-height: 1.1;
-    font-weight: 400;
-}
-
-h1 {
-    font-size: 4rem;
-    color: var(--color-font);
-}
-
-h2 {
-    font-size: 3.5rem;
-}
-
-a {
-    color: var(--color-font);
-    transition: var(--transition);
-}
-
-a:hover {
-    color: var(--color-primary);
-}
-
-.container {
-    width: var(--container-width-lg);
-    margin: 0 auto;
-    max-width: 2160px;
-}
-
-img {
-    display: block;
-    object-fit: cover;
-    width: 100%;
-}
-
-/* ===== NAV BAR ====== */
-nav {
-    height: 5rem;
-    width: 100vw;
-    display: grid;
-    place-content: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 99;
-}
-
-.nav__container {
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* only needed on mobile */
-.nav__toggle-btn {
-    display: none;
-}
-
-.nav__logo {  
-    width: 7.5rem;
-}
-
-.nav__links {
-    display: flex;
-    gap: 4rem;
-}
-
-.nav__socials {
-    display: flex;
-    gap: 1rem;
-}
-
-.nav__socials a {
-    width: 2rem;
-    height: 2rem;
-    border-radius: 0.5rem;
-}
 
 /* =================HEADER SLIDESHOW====================== */
 
 /* Slideshow container */
-.slideshow-container {
+/*.slideshow-container {
     max-width: 1000px;
     position: relative;
     margin: auto;
 }
 
 /* hide imgs by default */
-.mySlides {
+/*.mySlides {
     display: none;
 }
 
 /* next and previous btns */
-.prev, .next {
+/*.prev, .next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -141,18 +31,18 @@ nav {
 }
 
 /* Position "next btn" to the right */
-.next {
+/*.next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
 /* on hover. add blackbckground color with a bit of opacity */
-.prev:hover, .next:hover {
+/*.prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
 }
 
 /* dots */
-.dot {
+/*.dot {
     cursor: pointer;
     height: 15px;
     width: 15px;
@@ -168,7 +58,7 @@ nav {
 }
 
 /* fade animation */
-.fade {
+/*.fade {
     animation-name: fade;
     animation-duration: 1.5s;
 }
