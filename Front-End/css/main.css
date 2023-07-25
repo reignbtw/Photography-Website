@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Taviraj:wght@300;400;500;600;700&display=swap');
+:root{
+  --white: white;
+  --dark: #212324;
+  --darkGrey: #36393B;
+  --lightGrey: #727679;
+  --background: #F6F5F1;
+  --textColor: #967F79; 
+  --lightGreen: #22AAA1;
+  --darkGreen: #1d8881;
+  --transition: all 0.5s ease;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Taviraj', sans-serif;
+  background-color: var(--background);
+  color: var(--textColor);
+}
+
+body{
+    line-height: 1.6;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+ul li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    margin: 15px 0;
+    
+}
+/********************** Utility Classes *************************************/
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.btn{
+    background: var(--lightGreen);
+    border: none;
+    display: block;
+    width: 150px;
+    text-align: center;
+    color: var(--lightGreen);
+    background: transparent;
+    font-size: 15px;
+    padding: 12px;
+    border: 2px solid var(--lightGreen);
+    border-radius: 25px;
+    margin: 15px 0;
+    transition: var(--transition);
+}
+
+.btn:hover{
+    background: var(--darkGreen);
+    color: #fff;
+}
+
+.active{
+    color: var(--lightGreen)!important;
+}
+
+
+/************************** end of Utility Classes **************************/
+
+/****************************** Header Styling *****************************/
+
+.header{
+color: var(--textColor);
+}
+
+.top-nav a{
+    color: var(--textColor);
+}
+
+.brand-and-navBtn{
+    background: var(--background);
+    position: relative;
+    z-index: 999;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    font-size: 24px;
+    padding: 15px 25px;
+    color: var(--white);
+}
+
+.brand-name{
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+
+.navBtn{
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--background);
+    cursor: pointer;
+}
+
+.navBtn:hover{
+    background: var(--lightGreen);
+    color: var(--darkGreen);
+    transition: var(--transition);
+}
+
+.top-nav{
+    background: #000;
+    transform: translateY(-600px);
+    transition: var(--transition);
+}
+
+.showNav{
+    transform: translateY(0);
+}
+
+.search-icon{
+    display: none;
+}
+
+.top-nav ul li{
+    padding: 10px 0;
+}
+
+.top-nav ul a{
+    position: relative;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    display: block;
+}
+
+.top-navul a::after{
+    content: "";
+    height: 2px;
+    background: var(--lightGreen);
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    transition: var(--transition);
+}
+
+.top-nav ul a:hover::after{
+    width: 100px;
+}
+
+.about{
+    margin-top: -160px;
+}
+
+.about-content img{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+}
+
+.about-img{
+    background: var(--background);
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.about-content h2{
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 35px;
+    color: var(--textColor);
+}
+
+.about-content h3{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 100;
+    background: var(--dark);
+    width: 400px;
+    margin: 35px auto;
+    text-align: center;
+}
+
+blockquote{
+    font-size: 20px;
+    font-weight: 300;
+    width: 60vw;
+    margin: 45px auto 15px auto;
+    text-align: center;
+}
+
+blockquote span{
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--textColor);
+    letter-spacing: 5px;
+    display: block;
+}
+
+.social-icons{
+    width: 350px;
+    margin: 40px auto 0 auto;
+    padding-bottom: 30px;
+}
+
+.social-icons ul a{
+    color: #fff;
+    font-size: 30px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: var(--transition);
+}
+
+.social-icons ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-icons ul a:hover{
+    background: var(--lightGreen);
+    border-color: var(--lightGreen);
+}
+
+
+/************************ End of Header ***********************************/
+
+/************************** Main Section *********************************/
+
+
+/**************************** index.html *******************************/
+
+/* section one */
+
+/* section two */
+
+/*************************** end of index.html ********************************/
+
+
+
+/**************************** gallery.html *******************************/
