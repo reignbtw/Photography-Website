@@ -134,12 +134,12 @@ color: var(--textColor);
     transform: translateY(0);
 }
 
-.search-icon{
-    display: none;
-}
 
 .top-nav ul li{
+    float: left;
+    display: block;
     padding: 10px 0;
+    margin-left: 50px;
 }
 
 .top-nav ul a{
@@ -167,54 +167,50 @@ color: var(--textColor);
 }
 
 .about{
-    margin-top: -160px;
+    width: 100%;
+    padding: 78px 0px;
+    background-color: var(--background);
 }
 
-.about-content img{
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
+.about img{
+    height: auto;
+    width: 500px;
 }
 
-.about-img{
-    background: var(--background);
-    width: 150px;
-    height: 150px;
+.about-text{
+    width: 450px;
+}
+
+.main{
+    width: 1500px;
+    max-width: 95%;
     margin: 0 auto;
-    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.about-content h2{
-    font-size: 48px;
-    text-align: center;
-    margin-bottom: 35px;
+.about-text h1{
     color: var(--textColor);
+    font-size: 80px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
 }
 
-.about-content h3{
-    color: #fff;
-    font-size: 30px;
-    font-weight: 100;
-    background: var(--dark);
-    width: 400px;
-    margin: 35px auto;
-    text-align: center;
-}
-
-blockquote{
-    font-size: 20px;
-    font-weight: 300;
-    width: 60vw;
-    margin: 45px auto 15px auto;
-    text-align: center;
-}
-
-blockquote span{
-    font-size: 14px;
-    text-transform: uppercase;
+.about-text h5{
     color: var(--textColor);
-    letter-spacing: 5px;
-    display: block;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+.about-text p{
+    color: var(--textColor);
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
 }
 
 .social-icons{
@@ -246,6 +242,10 @@ blockquote span{
     border-color: var(--lightGreen);
 }
 
+.nav-selection {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
 
 /************************ End of Header ***********************************/
 
@@ -361,13 +361,13 @@ blockquote span{
 
 .icon-overlay{
     position: absolute;
-    color: #fff;
+    color: var(--background);
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     font-size: 50px;
-    background: rgba(150, 127, 121, 0.4);
+    background: rgba(150, 127, 121, 0.5);
     opacity: 0;
     transition: var(--transition);
 }
@@ -381,6 +381,20 @@ blockquote span{
 
 /**************************** gallery.html *******************************/
 
+.img-gallery{
+    width: 80%;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+
+.img-gallery img{
+    width: 100%;
+    height: 320px;
+    cursor: pointer;
+}
+
 /**************************** end of gallery.html *******************************/
 
 
@@ -392,7 +406,6 @@ blockquote span{
 /**************************** footer styling *******************************/
 
 .footer{
-    background: var(--dark);
     color: #fff;
     padding: 40px 0;
     text-align: center;
@@ -413,46 +426,6 @@ blockquote span{
     opacity: 0.7;
 }
 
-.subs{
-    background: #000;
-    width: 350px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 30px auto;
-}
-
-.subs i{
-    font-size: 26px;
-    flex: 10%;
-    display: block;
-}
-
-subs input{
-    flex: 60%;
-    background: transparent;
-    border: none;
-    font-size: 16px;
-    padding: 0 5px;
-    outline: 0;
-    color: #fff;
-}
-
-.subs button{
-    flex: 30%;
-    font-size: 16px;
-    padding: 15px 0;
-    font-weight: bold;
-    background: var(--lightGreen);
-    border: none;
-    transition: var(--transition);
-    cursor: pointer;
-}
-
-.subs butotn:hover{
-    color: #fff;
-}
-
 .footer > p{
     text-align: center;
     font-size: 14px;
@@ -460,14 +433,20 @@ subs input{
 
 /**************************** end of footer *******************************/
 
+
+
 /**************************** media queries *******************************/
 
-@media screen and (min-width: 678px){
+ @media screen and (min-width: 678px){
 
 }
 
 @media screen and (min-width: 800px){
-    
+   .insta-imgs{
+    .insta-imgs{
+        grid-template-columns: repeat(4, 1fr);
+    }
+   } 
 }
 
 @media screen and (min-width: 992px){
@@ -517,13 +496,81 @@ subs input{
 }
 
 @media screen and (min-width: 1000px){
-    
+    .section-one .container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 50px;
+    }
+    .sec-one-left{
+        align-self: center;
+    }
+    .work-content{
+        margin-top: 0;
+    }
+    .sec-one-left{
+        height: 100%;
+    }
+    .footer-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
 }
 
 @media screen and (min-width: 1200px){
-    
+    .footer-container > div{
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 @media screen and (min-width: 1400px){
     
+}
+
+@media screen and (min-width: 500px){
+    .header{
+        padding-bottom: 30px;
+    }
+    .social-icons{
+        display: none;
+    }
+    .about-content h3{
+        width: 100%;
+    }
+    .about-content blockquote{
+        font-size: 16px;
+        width: 100%;
+    }
+    .subs{
+        width: 280px;
+    }
+    .subs i{
+        display: none;
+    }
+    .subs input{
+        width: 100%;
+    }
+    .subs button{
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    h2{
+        font-size: 30px!important;
+    }
+    h3{
+        font-size: 20px!important;
+    }
+    p{
+        font-size: 15px;
+    }
+    .btn{
+        font-size: 14px;
+        padding: 8px 0;
+    }
+    .work-imgs{
+        grid-template-columns: 1fr;
+        grid-row-gap: 20px;
+    }
 }

@@ -13,6 +13,8 @@
 </head>
 <body>
  <!-- header -->
+<header>
+</header>
 <header class="header">
     <div class="nav-selection">
         <div class="brand-and-navBtn">
@@ -34,43 +36,31 @@
                 <li><a href="contact.html">Contact</a></li>        
             </ul>
         </nav>
-        <span class="search-icon">
-            <i class="fas fa-search"></i>
-        </span>
     </div>
-
-    <div class="container about">
-        <div class="about-content">
-            <div class="about-img flex">
-                <img src="C:\Users\15104\desktop\bootcamp\dads-website\photography-website\images\about-img.jpg" alt="photographer img">
+        <!-- Slideshow Container -->
+        <div class="slideshow__container">
+            <!-- Full-width images-->
+        <div class="mySlides fade">
+                <img src="../images/img1.jpg" style="width:100%">
             </div>
-            <h2>I'm Brad Helms</h2>
-            <h3>Photographer</h3>
-            <blockquote>
-                Bradley Helms has been a commercial photographer for the past 
-                18 years creating beautiful images for the Tailored Brands Studio, 
-                he has also worked with many brands including Ocean SF, 
-                Rosemary Roscoe Collection and on staff for the Men’s Wearhouse. 
-                At the Men’s Wearhouse he shot all of the brands including Levi, 
-                Docker, Joseph Aboud and many more.
-                <br>
-                <br>
-                Brad began shooting photographs for events and music festivals 
-                and then moved into corporate events. He has always loved capturing 
-                beautiful images of both people, clothing and products. Since then he 
-                has specialized in portraits, wedding, special events, and again, 
-                fashion and clothing. He loves taking on new challenges and new projects 
-                and with years of experience is a master at anything relating to the camera.
-                <br>
-                <br>
-                Brad grew up in Roseville and has been passionate about photography since he was young. 
-                He has been local to the Bay Area for the past 20 years where he has raised his family. 
-                He is down to earth and is as comfortable capturing the precious moments of people's 
-                lives as he is doing commercial photography. 
-                <br>
-                <br>
-                When he is not taking photographs he enjoys skiing and golfing. 
-            </blockquote>
+            <div class="mySlides fade">
+                <img src="../images/img2.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="../images/img3.jpg" style="width:100%">
+            </div>
+    
+            <!-- Next and Prev btns -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+    
+        <!-- Dots -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
         </div>
 
         <div class="social-icons">
@@ -131,25 +121,25 @@
         <span>@bradley.helms</span>
         <div class="insta-imgs">
             <div>
-                <img src="C:\Users\15104\desktop\bootcamp\dads-website\photography-website\images\img1.jpg">
+                <img src="../images/img1.jpg">
                 <div class="icon-overlay flex">
                     <i class="fab fa-instagram"></i>
                 </div>
             </div>
             <div>
-                <img src="C:\Users\15104\desktop\bootcamp\dads-website\photography-website\images\img1.jpg">
+                <img src="../images/img2.jpg">
                 <div class="icon-overlay flex">
                     <i class="fab fa-instagram"></i>
                 </div>
             </div>
             <div>
-                <img src="C:\Users\15104\desktop\bootcamp\dads-website\photography-website\images\img1.jpg">
+                <img src="../images/img3.jpg">
                 <div class="icon-overlay flex">
                     <i class="fab fa-instagram"></i>
                 </div>
             </div>
             <div>
-                <img src="C:\Users\15104\desktop\bootcamp\dads-website\photography-website\images\img1.jpg">
+                <img src="../images/img1.jpg">
                 <div class="icon-overlay flex">
                     <i class="fab fa-instagram"></i>
                 </div>
@@ -161,52 +151,10 @@
 
 <!-- Footer -->
 <footer class="footer">
-    <div class="footer-container container">
-        <div>
-            <h2>BRADLEY HELMS</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-               Non pulvinar neque laoreet suspendisse interdum consectetur libero.</p>
-        </div>
-        <div>
-            <h3>Contact Me for more information!</h3>
-            <div class="subs">
-                <i class="fas-fa-envelope"></i>
-                <input type="email" id="email" placeholder="Email Address">
-                <button type="submit">Email</button>
-            </div>
-        </div>
-    </div>
     <p>&copy; Copyright Brad Helms Photography 2023</p>
 </footer>
 
-<!-- <header>
-    <!-- Slideshow Container -->
-   <!-- <div class="slideshow__container">
-        <!-- Full-width images-->
-      <!--  <div class="mySlides fade">
-            <img src="../images/img1.jpg" style="width:100%">
-        </div>
-        <div class="mySlides fade">
-            <img src="../images/img2.jpg" style="width:100%">
-        </div>
-        <div class="mySlides fade">
-            <img src="../images/img3.jpg" style="width:100%">
-        </div>
 
-        <!-- Next and Prev btns -->
-      <!--  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </div>
-    <br>
-
-    <!-- Dots -->
-  <!--  <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
-</header>
 
 <!--ABOUT ME-->
 
