@@ -85,7 +85,8 @@ h1, h2, h3, h4, h5, h6, p{
 /****************************** Header Styling *****************************/
 
 .header{
-color: var(--textColor);
+    color: var(--textColor);
+    margin-top: 50px;
 }
 
 .top-nav a{
@@ -94,19 +95,21 @@ color: var(--textColor);
 
 .brand-and-navBtn{
     background: var(--background);
-    position: relative;
+    position: fixed;
     z-index: 999;
-    height: 90px;
+    height: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-weight: 500;
     font-size: 24px;
-    padding: 15px 25px;
+    padding: 10px 25px;
+    margin-bottom: -40px;
     color: var(--white);
 }
 
 .brand-name{
+    margin-left: 60px;
     letter-spacing: 5px;
     cursor: pointer;
 }
@@ -135,14 +138,15 @@ color: var(--textColor);
 }
 
 
-.top-nav ul li{
+.brand-and-navBtn ul li{
     float: left;
     display: block;
     padding: 10px 0;
     margin-left: 50px;
+    margin-right: 60px;
 }
 
-.top-nav ul a{
+.brand-and-navBtn ul a{
     position: relative;
     font-weight: 500;
     font-size: 18px;
@@ -150,7 +154,7 @@ color: var(--textColor);
     display: block;
 }
 
-.top-navul a::after{
+.brand-and-navBtn ul a::after{
     content: "";
     height: 2px;
     background: var(--lightGreen);
@@ -162,7 +166,7 @@ color: var(--textColor);
     transition: var(--transition);
 }
 
-.top-nav ul a:hover::after{
+.brand-and-navBtn ul a:hover::after{
     width: 100px;
 }
 
@@ -305,6 +309,7 @@ color: var(--textColor);
 }
 
 .work-imgs{
+    height: 150px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 20px;
@@ -351,8 +356,14 @@ color: var(--textColor);
 }
 
 .insta-imgs{
+    padding: 50px 50px 50px 50px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+}
+
+i:last-of-type{
+    background: transparent;
+    color: var(--background);
 }
 
 .insta-imgs > div{

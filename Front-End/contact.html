@@ -14,27 +14,23 @@
 </head>
 <body>
  <!-- header -->
-<header class="header">
+ <header class="header">
     <div class="nav-selection">
         <div class="brand-and-navBtn">
             <span class="brand-name">
                 Brad Helms Photography
-            </span>
+            </span> 
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <!-- <li><a href="portfolio.html">Portfolio</a></li> -->
+                <li><a href="contact.html">Contact</a></li>        
+            </ul>
             <span class="navBtn flex">
                 <i class="fas fa-bars"></i>
             </span>
         </div>
-
-        <!-- navigation menu -->
-        <nav class="top-nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>        
-            </ul>
-        </nav>
     </div>
 
 
@@ -78,19 +74,11 @@
             <option value="other">Other</option>
         </select>
 
-        <label for="package">Which Photo Package would you like to select? *</label>
-        Standard: <input type="checkbox" id="checkbox" onclick="checkFunction()">
-        Plus: <input type="checkbox" id="checkbox" onclick="checkFunction()">
-        Premium: <input type="checkbox" id="checkbox" onclick="checkFunction()">
-        Custom: <input type="checkbox" id="checkbox" onclick="checkFunction()">
-
         <label for="date">What Date(s) and Time(s) Would Work Best For You? *</label>
-        <input type="text" id="date" name="dateandTime" placeholder="I'm available for a photoshoot on 
-        January 1st and 2nd in the morning.">
+        <input type="text" id="date" name="dateandTime" placeholder="I'm available for a photoshoot on January 1st and 2nd in the morning.">
 
         <label for="location">Where Would You Like To Have The Photoshoot? *</label>
-        <input type="text" id="location" name="location" placeholder="I would like to have my photoshoot 
-        at the Golden Gate Bridge in San Francisco.">
+        <input type="text" id="location" name="location" placeholder="I would like to have my photoshoot  at the Golden Gate Bridge in San Francisco.">
 
         <label for="heardOfMe">How Did You Hear About Me? *</label>
         <select id="heardOfMe" name="heardOfMe">
@@ -110,55 +98,8 @@
 
 <!-- Footer -->
 <footer class="footer">
-    <div class="footer-container container">
-        <div>
-            <h2>BRADLEY HELMS</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-               Non pulvinar neque laoreet suspendisse interdum consectetur libero.</p>
-        </div>
-        <div>
-            <h3>Contact Me for more information!</h3>
-            <div class="subs">
-                <i class="fas-fa-envelope"></i>
-                <input type="email" id="email" placeholder="Email Address">
-                <button type="submit">Email</button>
-            </div>
-        </div>
-    </div>
     <p>&copy; Copyright Brad Helms Photography 2023</p>
 </footer>
-
-<!-- <header>
-    <!-- Slideshow Container -->
-    <!-- <div class="slideshow__container">
-        <!-- Full-width images-->
-      <!--  <div class="mySlides fade">
-            <img src="../images/img1.jpg" style="width:100%">
-        </div>
-        <div class="mySlides fade">
-            <img src="../images/img2.jpg" style="width:100%">
-        </div>
-        <div class="mySlides fade">
-            <img src="../images/img3.jpg" style="width:100%">
-        </div>
-
-        <!-- Next and Prev btns -->
-      <!--  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </div>
-    <br>
-
-    <!-- Dots -->
-  <!--  <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
-</header>
-
-<!--ABOUT ME-->
-
 </body>
 </html>
 <script src="js/index.js"></script>
